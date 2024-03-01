@@ -1,16 +1,16 @@
 //  This is my nav bar that I want to keep consistent across all pages.
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+            <Link to="/aboutme">About Me</Link>
+              {/*} <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <li><a href="#contact">Contact</a></li> */}
+           
         </nav>
-    )
+    );
 }
 
 export default Nav
