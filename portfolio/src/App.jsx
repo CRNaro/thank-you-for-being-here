@@ -4,6 +4,8 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import AboutMe from './components/Pages/AboutMe'
 import Contact from './components/Pages/Contact'
+import Portfolio from './components/Pages/Portfolio'
+import Resume from './components/Pages/Resume'
 
 
 
@@ -16,9 +18,9 @@ function App() {
      <Routes>
       <Route path="/aboutme" element={<AboutMe />} />
       <Route path="/contact" element={<Contact />} />
-      {/*<Route path="/" element={<Portfolio />} />
-      <Route path="/" element={<Resume />} /> 
-      <Route path="/" element={<Home />} /> */}
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/" element={<> </>} />
       </Routes>
      </Router>
    <Footer />
