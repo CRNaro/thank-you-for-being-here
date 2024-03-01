@@ -1,15 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh' }}>
+    <Header />
       Hello World!  This is my NEW PORTFOLIO built with Vite and React.
-    </>
+
+
+
+    <Footer />
+    </div>
   )
 }
 

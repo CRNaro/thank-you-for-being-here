@@ -1,0 +1,17 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(212, 212, 212, 1);
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
