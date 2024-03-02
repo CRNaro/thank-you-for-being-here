@@ -1,4 +1,5 @@
 // This page will house all of my contact information.
+ import '../../styles/Contact.css';
 
 function Contact() {
   return (
@@ -6,17 +7,14 @@ function Contact() {
       <h1>Contact</h1>
       <p>Email:</p>
       <form action= "https://formspree.io/CRNaro@gmail.com" method="POST">
-        <label>
-            Name:
-            <input type="text" name="name" />
+        <label class="name-field" >
+            <input type="text" name="name" placeholder="Your Name" />
         </label>
-        <label>
-            Email:
-            <input type="email" name="_replyto" />
+        <label class="email-field" >
+            <input  type="email" name="_replyto" placeholder="Your Email" />
         </label>
-        <label>
-            Message:
-            <textarea name="message"></textarea>
+        <label class="message-field" >
+            <textarea name="message" placeholder="Message Me"></textarea>
         </label>
         <button type="submit">Send</button>
         </form>
