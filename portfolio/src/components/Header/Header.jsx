@@ -3,11 +3,16 @@
 import '../../styles/Header.css';
 import './Nav.jsx';
 import Nav from './Nav.jsx';
+import selfImg from '../../assets/CRN.jpeg';
 
 function Header() {
     return (
         <header>
-        <h1>Christopher R. Naro</h1>
+        <img class="header-img" src={selfImg} alt="Christopher Naro"  />
+            <div>
+        <h1>Christopher </h1>
+        <h1 class='last-name'>Naro</h1>
+        </div>
         <Nav />
         </header>
     )

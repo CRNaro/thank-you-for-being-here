@@ -3,11 +3,11 @@
 function Resume() {
     return (
         <div>
-            <h1>Resume</h1>
+            <h1>Resume:</h1>
+            <a href="https://docs.google.com/document/d/1QKkubolsRJ5f-EszamvKNPAMFrNY9PFUMHPy5h9DFrU/edit?usp=sharing">View & Download</a>
             <p>
-                Here is my resume:
+                If you have any further questions, please feel free to contact me.
             </p>
-            <a href="https://docs.google.com/document/d/1QYyZ3v3N0JNQw0uT8Q1Yw8v1QpGy6k3d/edit">Download</a>
         </div>
     );
 }

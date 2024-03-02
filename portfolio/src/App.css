@@ -1,0 +1,16 @@
+
+.main-content {
+
+    width: 100%; /* Adjust as needed */
+    height: 70%;
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds some space around the content */
+    flex-grow: 1; /* Allows the content to grow to fill the available space */
+}
+
+@media (min-width: 600px) {
+    .main-content {
+        width: 90%;
+        height: 70%;
+    }
+}
