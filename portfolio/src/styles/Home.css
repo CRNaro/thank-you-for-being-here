@@ -1,0 +1,7 @@
+.header-img {
+    display: flex;
+    width: 30%;
+    border-radius: 0% 40% 0% 40% ;
+    margin-right: -60%;
+    box-shadow: 0 5px 10px rgb(30, 34, 33);
+}

@@ -1,0 +1,21 @@
+.about-me-section {
+    opacity: 0;
+    transform: translate(0, 50%);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    will-change: opacity, transform;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-me-content {
+    height: 90%; /* Adjust as needed */
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+

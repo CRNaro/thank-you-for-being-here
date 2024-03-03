@@ -15,16 +15,9 @@ header div {
     margin-left: 60%;
 }
 
-.header-img {
-    display: flex;
-    width: 20%;
-    border-radius: 50%;
-    margin-right: -60%;
-    box-shadow: 0 0 30px 20px rgb(91, 117, 109);
-}
 
 @media (min-width: 600px) {
-    footer {
+    footer 
         flex-direction: row;
         width: 90%;
         margin: 0 auto;

@@ -9,11 +9,11 @@ import Portfolio from './components/Pages/Portfolio'
 import Resume from './components/Pages/Resume'
 import Home from './components/Pages/Home'
 
-
+//
 
 function App() {
   return (
-    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh' }}>
+    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh' }}> 
    <Router>
     <Header />
     <div className="main-content">
