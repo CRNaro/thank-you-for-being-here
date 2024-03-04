@@ -18,8 +18,8 @@ function App() {
     <Header />
     <div className="main-content">
      <Routes>
-      <Route path="/" element={ <Home />} />
-      <Route path="/aboutme" element={<AboutMe />} />
+      {/*<Route path="/" element={ <Home />} />*/}
+      <Route path="/" element={<AboutMe />} /> {/* This is the main route for my project, but i will have a home page as my real profile main route = path="/aboutme" */}
       <Route path="/contact" element={<Contact />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/resume" element={<Resume />} />

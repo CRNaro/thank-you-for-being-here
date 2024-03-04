@@ -4,8 +4,8 @@ import selfImg from '../../assets/CRN.jpeg';
 
 function Home() {
     return (
-        <div class="welcome-content">
-              <img class="header-img" src={selfImg} alt="Christopher Naro"  />
+        <div className="welcome-content">
+              <img className="header-img" src={selfImg} alt="Christopher Naro"  />
               <div >
             <h1>Welcome to Christopher R Naro's Professional Webpage</h1>
             <p>
