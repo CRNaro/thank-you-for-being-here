@@ -10,7 +10,7 @@ function Header() {
         <header>
             <div>
         <h1>Christopher </h1>
-        <h1 class='last-name'>Naro</h1>
+        <h1 className='last-name'>Naro</h1>
         </div>
         <Nav />
         </header>
