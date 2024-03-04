@@ -5,3 +5,10 @@
     margin-right: -60%;
     box-shadow: 0 5px 10px rgb(30, 34, 33);
 }
+.welcome-content {
+    background-color: antiquewhite;
+    height: 100%; /* Adjust as needed */
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}

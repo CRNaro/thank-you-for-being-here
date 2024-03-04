@@ -12,6 +12,7 @@
 }
 
 .about-me-content {
+    background-color: antiquewhite;
     height: 90%; /* Adjust as needed */
     overflow-y: auto;
     padding: 20px;
