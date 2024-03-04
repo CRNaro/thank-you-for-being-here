@@ -8,6 +8,9 @@ function Resume() {
             <p>
                 If you have any further questions, please feel free to contact me.
             </p>
+            <p>
+                My proficiencies include:
+            </p>
         </div>
     );
 }
