@@ -12,6 +12,25 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const [emailError, setEmailError] = useState('');
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+    if (!email) {
+      setEmailError('Email is required');
+    } else if (!emailRegex.test(email)) {
+      setEmailError('Invalid email address');
+    } else {
+      setEmailError('');
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    validateEmail(e.target.value);
+  };
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name === "" || email === "" || message === "") {
@@ -41,7 +60,7 @@ function Contact() {
                     name="_replyto" 
                     className={`form-control ${emailTouched && email === "" ? "is-invalid" : ""}`} 
                     placeholder={emailTouched && email === "" ? "Field required" : "Your Email"} 
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={handleEmailChange}  //e => setEmail(e.target.value)
                     onBlur={() => setEmailTouched(true)}
                     />
         </label>
