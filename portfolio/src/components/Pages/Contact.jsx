@@ -42,7 +42,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className="contact-section">
       <h1>Contact</h1>
       <p>Email:</p>
       <form onSubmit={handleSubmit} action= "https://formspree.io/CRNaro@gmail.com" method="POST">

@@ -1,6 +1,5 @@
 // This page will house my clickable and downloadable resume.
-// <section className="about-me-content">
-// <div className="flex">
+import "../../styles/Resume.css";
 
 function Resume() {
     return (
