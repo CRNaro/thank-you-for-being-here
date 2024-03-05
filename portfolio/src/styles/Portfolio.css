@@ -1,0 +1,19 @@
+
+.portfolio-section {
+    background-color: antiquewhite;
+    padding: 20px;
+    height: 100%;
+}
+
+.container {
+    max-height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.333% - 10px);
+    margin-bottom: 20px;
+}

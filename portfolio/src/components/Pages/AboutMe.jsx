@@ -26,7 +26,9 @@ function AboutMe() {
     
    
     <section className="about-me-content">
+        <div className="flex">
         <img className="header-img" src={selfImg} alt="Christopher Naro"  />
+        <div class="ml-10">
         <h1>Welcome</h1>
             <p>
             
@@ -59,6 +61,8 @@ Warm regards,
 <br/>
 Christohper R Naro
             </p>
+            </div>
+        </div>
       <h1 id="about-me">About Me</h1>
       <div className="mask"></div>
       <p>

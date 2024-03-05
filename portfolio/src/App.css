@@ -1,15 +1,14 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
+
 
 
 .main-content {
 
-    width: 100%; /* Adjust as needed */
+    width: 100%; 
     height: 70%;
-    margin: 0 auto; /* Centers the content horizontally */
-    padding: 20px; /* Adds some space around the content */
-    flex-grow: 1; /* Allows the content to grow to fill the available space */
+    margin: 0 auto; 
+    padding: 20px; 
+    flex-grow: 1; 
 }
 
 @media (min-width: 600px) {
