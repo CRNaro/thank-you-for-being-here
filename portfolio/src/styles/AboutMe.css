@@ -22,12 +22,22 @@
     
 }
 
-.welcome {
+.my-custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
   
+  .my-custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; 
+  }
    
-
-}
-
-.flex {
-
-}
+  .my-custom-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  .my-custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .my-custom-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

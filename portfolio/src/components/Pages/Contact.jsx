@@ -1,9 +1,10 @@
-// This page will house all of my contact information.
+import { useForm, ValidationError } from '@formspree/react';
 import { useState } from 'react';
- import '../../styles/Contact.css';
- import 'bootstrap/dist/css/bootstrap.min.css'
+import '../../styles/Contact.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-function Contact() {
+function ContactForm() {
+  const [state, handleSubmit] = useForm("mqkrlavd");
   const [nameTouched, setNameTouched] = useState(false);
   const [emailTouched, setEmailTouched] = useState(false);
   const [messageTouched, setMessageTouched] = useState(false);
@@ -12,40 +13,13 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const [emailError, setEmailError] = useState('');
-
-  const validateEmail = (email) => {
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
-    if (!email) {
-      setEmailError('Email is required');
-    } else if (!emailRegex.test(email)) {
-      setEmailError('Invalid email address');
-    } else {
-      setEmailError('');
-    }
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    validateEmail(e.target.value);
-  };
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name === "" || email === "" || message === "") {
-      alert("Please fill out all fields");
-    } else {
-    console.log(name, email, message);
-    
+  if (state.succeeded) {
+      return <p>Thank you for contacting me.  I will respond as soon as possible.</p>;
   }
-  }
-
   return (
     <div className="contact-section">
-      <h1>Contact</h1>
-      <p>Email:</p>
-      <form onSubmit={handleSubmit} action= "https://formspree.io/CRNaro@gmail.com" method="POST">
+      <h1>Please Contact Me</h1>
+      <form onSubmit={handleSubmit}>
         <label className="name-field" >
             <input type="text" 
                     name="name" 
@@ -55,14 +29,22 @@ function Contact() {
                     onBlur={() => setNameTouched(true)}
                     />
         </label>
-        <label className="email-field" >
-            <input  type="email" 
-                    name="_replyto" 
-                    className={`form-control ${emailTouched && email === "" ? "is-invalid" : ""}`} 
-                    placeholder={emailTouched && email === "" ? "Field required" : "Your Email"} 
-                    onChange={handleEmailChange}  //e => setEmail(e.target.value)
-                    onBlur={() => setEmailTouched(true)}
-                    />
+        <label htmlFor="email" className="email-field">
+         
+          <input
+            id="email"
+            type="email" 
+            name="email"
+            className={`form-control ${emailTouched && email === "" ? "is-invalid" : ""}`} 
+            placeholder={emailTouched && email === "" ? "Field required" : "Your Email"} 
+            onChange={e => setEmail(e.target.value)}
+            onBlur={() => setEmailTouched(true)}
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
         </label>
         <label className="message-field" >
             <textarea name="message" 
@@ -71,11 +53,18 @@ function Contact() {
            onChange={e => setMessage(e.target.value)}
             onBlur={() => setMessageTouched(true)}
             ></textarea>
+            <ValidationError 
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
+            />
         </label>
-        <button type="submit" className="button">Submit</button>
-        </form>
+        <button type="submit" className="button" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
 
-export default Contact;
+export default ContactForm;

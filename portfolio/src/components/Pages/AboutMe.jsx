@@ -4,12 +4,17 @@ import { Link, useLocation } from "react-router-dom";
 import "../../styles/AboutMe.css";
 import "../../styles/Home.css";
 import selfImg from '../../assets/CRN.jpeg';
+import { CustomScroll } from 'react-custom-scroll';
 
 function AboutMe() {
+  const handleScroll = (event) => {
+    console.log('Scroll event:', event);
+  };
 
   return (
     
     <section className="about-me-content">
+      <CustomScroll onScroll={handleScroll}>
         <div className="flex">
         <img className="header-img" src={selfImg} alt="Christopher Naro"  />
         <div className="welcome">
@@ -54,7 +59,7 @@ Christohper R Naro
         Camp, I am on a journey to transition my career from an accomplished
         Head Brewer with over a decade of experience in the brewing industry to
         a dynamic role in web development. My background in brewing has
-        instilled in me a deep appreciation for the craft of creating, a
+        instilled in me a deep appreciation for the craft of creating, with
         meticulous attention to detail, and a relentless pursuit of quality and
         innovation. These attributes, combined with my current educational
         endeavor in coding, have equipped me with a unique set of skills and a
@@ -102,9 +107,10 @@ Christohper R Naro
       perspective to your team. I would be happy to provide my email to serious
       recruitment leads. Thank you for taking the time to read my profile and
       get to know me.
+      </CustomScroll>
       <div className="mask mask-bottom"></div>
     </section>
-
+   
   );
 }
 
