@@ -8,12 +8,15 @@ import Contact from './components/Pages/Contact'
 import Portfolio from './components/Pages/Portfolio'
 import Resume from './components/Pages/Resume'
 import Home from './components/Pages/Home'
-
-//
+// import backgroundImage from './assets/maidstonerainbow.jpg'
+// import backgroundImage from './assets/bikinglake.jpg'
+// import backgroundImage from './assets/atmosphere.png'
+// import backgroundImage from './assets/mountaintexture.png'
+import backgroundImage from './assets/skytexture.png'
 
 function App() {
   return (
-    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh' }}> 
+    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh', backgroundImage: `url(${backgroundImage})`, backgroundSize: '' }}> 
    <Router>
     <Header />
     <div className="main-content">

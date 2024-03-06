@@ -1,16 +1,16 @@
 //  This is my nav bar that I want to keep consistent across all pages.
-import { Link } from 'react-router-dom';
+import { useLocation,NavLink } from 'react-router-dom';
 import '../../styles/Nav.css';
 
 function Nav() {
+    const location = useLocation();
     return (
         <nav>
-
-            <Link to="/">Home/AboutMe</Link>
+            <NavLink to="/" className={location.pathname === "/" ? "active-link" : ""}>Home/AboutMe</NavLink>
            {/* <Link to="/aboutme#about-me">About</Link>   will need to change back to <Link to="/aboutme">About</Link> */}
-            <Link to="/contact">Contact</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/resume">Resume</Link>
+            <NavLink to="/contact" className={location.pathname === "/contact" ? "active-link" : ""}>Contact</NavLink>
+            <NavLink to="/portfolio" className={location.pathname === "/portfolio" ? "active-link" : ""}>Portfolio</NavLink>
+            <NavLink to="/resume" className={location.pathname === "/resume" ? "active-link" : ""}>Resume</NavLink>
            
         </nav>
     );

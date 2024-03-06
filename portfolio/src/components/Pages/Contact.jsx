@@ -72,7 +72,7 @@ function Contact() {
             onBlur={() => setMessageTouched(true)}
             ></textarea>
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" className="button">Submit</button>
         </form>
     </div>
   );

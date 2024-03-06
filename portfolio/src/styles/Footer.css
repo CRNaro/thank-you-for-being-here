@@ -17,9 +17,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(212, 212, 212, 1);
+    background-color: rgb(212, 212, 212, .4);
     width: calc(100% - 40px);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(95, 95, 12);
 }
 
 footer p {
@@ -41,21 +42,20 @@ footer a {
 }
 
 .linkedin-icon {
-    width: 45%;
+    width: 80%;
    
   }
 .github-icon {
-    width: 90%;
-    margin:  ;
+    margin-right: -20px;
   }
 .insta-icon {
-    width: 5%;
+    width: 8%;
     
   }
 
 .footer-list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
 }

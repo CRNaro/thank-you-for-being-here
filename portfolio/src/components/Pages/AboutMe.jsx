@@ -6,29 +6,13 @@ import "../../styles/Home.css";
 import selfImg from '../../assets/CRN.jpeg';
 
 function AboutMe() {
-    // NOTE: Tried to make the scroll work when clicking on 'about', will need to work
-    // on this later
-    // const location = useLocation();
-    // useEffect(() => {
-    //     if (location.hash) {
-    //         let element = document.getElementById(location.hash.slice(1)); //substring(1) removes the # at the beginning of the hash
-    //     if (element) {
-    //         setTimeout(() => {
-    //         element.scrollIntoView({ top: 0, left: 0, behavior: "smooth" });
-    //         }, 0);
-    //     }
-    //     } else {
-    //         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
-    //     }
-    // }, [location,]);
 
   return (
     
-   
     <section className="about-me-content">
         <div className="flex">
         <img className="header-img" src={selfImg} alt="Christopher Naro"  />
-        <div class="ml-10">
+        <div className="welcome">
         <h1>Welcome</h1>
             <p>
             
@@ -126,3 +110,23 @@ Christohper R Naro
 
 
 export default AboutMe;
+
+
+
+
+
+   // NOTE: Tried to make the scroll work when clicking on 'about', will need to work
+    // on this later
+    // const location = useLocation();
+    // useEffect(() => {
+    //     if (location.hash) {
+    //         let element = document.getElementById(location.hash.slice(1)); //substring(1) removes the # at the beginning of the hash
+    //     if (element) {
+    //         setTimeout(() => {
+    //         element.scrollIntoView({ top: 0, left: 0, behavior: "smooth" });
+    //         }, 0);
+    //     }
+    //     } else {
+    //         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+    //     }
+    // }, [location,]);
