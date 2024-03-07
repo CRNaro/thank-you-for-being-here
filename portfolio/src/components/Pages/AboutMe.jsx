@@ -5,6 +5,7 @@ import "../../styles/AboutMe.css";
 import "../../styles/Home.css";
 import selfImg from '../../assets/CRN.jpeg';
 import { CustomScroll } from 'react-custom-scroll';
+import Card from 'react-bootstrap/Card';
 
 function AboutMe() {
   const handleScroll = (event) => {
@@ -17,6 +18,7 @@ function AboutMe() {
       <CustomScroll onScroll={handleScroll}>
         <div className="flex">
         <img className="header-img" src={selfImg} alt="Christopher Naro"  />
+        
         <div className="welcome">
         <h1>Welcome</h1>
             <p>

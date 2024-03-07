@@ -16,7 +16,7 @@ import backgroundImage from './assets/skytexture.png'
 
 function App() {
   return (
-    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '100vh', backgroundImage: `url(${backgroundImage})`, backgroundSize: '150%', backgroundAttachment: 'fixed' }}> 
+    <div style={{ backgroundColor:'rgb(245, 245, 240, 1)', height: '180vh', backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundAttachment: 'fixed' }}> 
    <Router>
     <Header />
     <div className="main-content">

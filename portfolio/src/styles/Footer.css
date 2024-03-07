@@ -40,18 +40,9 @@ footer a {
         
     }
 }
+.logo-card {
 
-.linkedin-icon {
-    width: 80%;
-   
-  }
-.github-icon {
-    margin-right: -20px;
-  }
-.insta-icon {
-    width: 8%;
-    
-  }
+}
 
 .footer-list {
     list-style-type: none;
