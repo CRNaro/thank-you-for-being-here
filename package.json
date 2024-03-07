@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@formspree/react": "^2.5.1",
-    "formik": "^2.4.5",
-    "react-custom-scroll": "^7.0.0"
-  }
-}
