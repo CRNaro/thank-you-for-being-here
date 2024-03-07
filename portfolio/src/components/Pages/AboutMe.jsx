@@ -1,4 +1,8 @@
 // This page will be the keeper of my About Me section
+// NOTES FOR FUTURE BUILD: I want to make the main page a welcome page and then have the about me section be a separate page
+// I want to build all the text and images into cards for each page to have a nice clean look.
+// Need to fix the background image 
+
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../../styles/AboutMe.css";
