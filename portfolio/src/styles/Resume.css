@@ -8,4 +8,10 @@
     border-radius: 5px;
 }
 
+.nav-link {
+    display: inline-block;
+    margin: 2px 30px 2px 0px;
+    text-decoration: none;
+    color: rgb(244, 248, 7);
+    }
 

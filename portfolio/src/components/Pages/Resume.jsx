@@ -1,4 +1,5 @@
 // This page will house my clickable and downloadable resume.
+import { Link } from "react-router-dom";
 import "../../styles/Resume.css";
 import ResumePDF from "../../assets/Cnaro-resume.pdf";
 
@@ -8,9 +9,9 @@ function Resume() {
             <div className="resume-header">
             <h1>Resume:</h1>
             <a href="https://docs.google.com/document/d/1QKkubolsRJ5f-EszamvKNPAMFrNY9PFUMHPy5h9DFrU/edit?usp=sharing"></a> {/*can use this link to my google docs for most up to date resume*/}
-            <a href={ResumePDF} download>Download Resume</a>
+            <a href={ResumePDF} download className="nav-link">Download Resume</a>
             <p>
-                If you have any further questions, please feel free to contact me.
+                If you have any further questions, please feel free to <Link to="/contact" className="nav-link">contact me</Link>.
                 
             </p>
             </div>
