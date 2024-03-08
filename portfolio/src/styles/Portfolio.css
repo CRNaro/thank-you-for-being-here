@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .card {
@@ -25,4 +26,21 @@
     height: 50px;
     margin: 0 auto;
     display: block;
+}
+
+@media (max-width: 600px) {
+    .container {
+        align-items: nowrap;
+    }
+    .card {
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        align-items: nowrap;
+    }
+    .card {
+        width: 100%;
+    }
 }

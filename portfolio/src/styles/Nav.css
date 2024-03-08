@@ -13,3 +13,32 @@ nav a {
     background-color: rgb(245, 245, 240, .8);
     border-radius: 5px;
 }
+
+@media (max-width: 320px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .container {
+        flex-direction: column;
+        align-items: nowrap;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+}

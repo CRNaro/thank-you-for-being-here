@@ -1,5 +1,5 @@
 //  This page will house my portfolio of projects.
-import "../../styles/Portfolio.css";
+//import "../../styles/Portfolio.css";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import githubLogo from '../../assets/github-mark.png';
@@ -9,7 +9,7 @@ import WetMyPlants from '../../assets/wetmyplants.png';
 import PencilMeIn from '../../assets/pencilmein.png';
 import Mondays from '../../assets/mondays.png';
 import Password from '../../assets/password.png';
-
+import "../../styles/Portfolio.css";
 
 const projects = [
 {

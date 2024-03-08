@@ -8,9 +8,27 @@
     flex-grow: 1; 
 }
 
+@media (min-width: 320px) {
+    .main-content {
+        width: 90%;
+        height: 70%;
+    }
+}
+
 @media (min-width: 600px) {
     .main-content {
         width: 90%;
         height: 70%;
     }
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        height: 70%;
+  }
+}
+
+  @media (max-width: 1024px) {
+    /* CSS rules for screens 1024px wide or less go here */
+  }
