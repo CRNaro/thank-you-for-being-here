@@ -1,18 +1,21 @@
 // This page will house my clickable and downloadable resume.
 import "../../styles/Resume.css";
+import ResumePDF from "../../assets/Cnaro-resume.pdf";
 
 function Resume() {
     return (
         <section className="resume-content">
             <div className="resume-header">
             <h1>Resume:</h1>
-            <a href="https://docs.google.com/document/d/1QKkubolsRJ5f-EszamvKNPAMFrNY9PFUMHPy5h9DFrU/edit?usp=sharing">View & Download</a>
+            <a href="https://docs.google.com/document/d/1QKkubolsRJ5f-EszamvKNPAMFrNY9PFUMHPy5h9DFrU/edit?usp=sharing"></a> {/*can use this link to my google docs for most up to date resume*/}
+            <a href={ResumePDF} download>Download Resume</a>
             <p>
                 If you have any further questions, please feel free to contact me.
+                
             </p>
             </div>
             <div className='proficiencies'>
-            <p>
+           
                <h3>My proficiencies include:</h3> 
                <ul>
                     <h5>Frontend:</h5>
@@ -72,7 +75,7 @@ function Resume() {
                         framework for complex queries.
                         </li>
                 </ul>
-            </p>
+            
             </div>
         </section>
     );
