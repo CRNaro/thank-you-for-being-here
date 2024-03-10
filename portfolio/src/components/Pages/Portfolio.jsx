@@ -3,6 +3,7 @@
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import githubLogo from '../../assets/github-mark.png';
+import deployedIcon from '../../assets/rocket.webp'
 import DnD from '../../assets/DnD.png';
 import WeatherApp from '../../assets/weather.png';
 import WetMyPlants from '../../assets/wetmyplants.png';
@@ -14,39 +15,45 @@ import "../../styles/Portfolio.css";
 const projects = [
 {
         name: "D&D Stat Compiler ",
-        description: "Create a Dungeons & Dragons character and compile their stats.",
+        description: "Create a Dungeons & Dragons character and compile their stats.  Save your characters and come back to them later!",
         image: DnD,
         githublink: "https://github.com/CRNaro/dnd-stat-compiler.git",
+        deployedlink: "https://crnaro.github.io/dnd-stat-compiler/",
 },
   {
     name: "How About That Weather ",
     description: "My weather app that utilizes the OpenWeather API to display the current weather in a city.",
     image: WeatherApp,
     githublink: "https://github.com/CRNaro/how-about-that-weather-06.git",
+    deployedlink: "https://crnaro.github.io/how-about-that-weather-06/",
   },
   {
     name: "I Wet My Plants",
-    description: "Create a database of plants and their care instructions.  Never let another plant die on your watch!",
+    description: "Create a database of plants and their care instructions.  Never let another plant die on your watch!  Love your plants like family.",
     image: WetMyPlants,
     githublink: "https://github.com/CRNaro/group-project-02.git",
+    deployedlink: "https://thawing-dawn-01968-1886d8c04121.herokuapp.com/",
   },
   {
     name: "Pencil Me In",
     description: "A simple calendar app that allows you to schedule events and keep track of your day.",
     image: PencilMeIn,
     githublink: "https://github.com/CRNaro/pencil-me-in-05.git",
+    deployedlink: "https://crnaro.github.io/pencil-me-in-05/",
   },
   {
     name: "Case of the Mondays",
     description: "A command-line application designed to manage a company's employee database.",
     image: Mondays,
     githublink: "https://github.com/CRNaro/case-of-the-mondays-12.git",
+    deployedlink: "https://crnaro.github.io/case-of-the-mondays-12/",
   },
   {
     name: "Bring Me The Password",
     description: "A password generator that allows you to create a secure password for your accounts.",
     image: Password,
     githublink: "https://github.com/CRNaro/bring-me-the-pw-03.git",
+    deployedlink: "https://crnaro.github.io/bring-me-the-pw-03/",
   },
 ];
 
@@ -62,7 +69,10 @@ function Portfolio() {
               <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
                 <Card.Text>{project.description}</Card.Text>
+                <div className="icon-container">
                 <Card.Link href={project.githublink}><img className="github-icon" src={githubLogo}/></Card.Link>
+                <Card.Link href={project.deployedlink}><img className="deployed-icon" src={deployedIcon}/></Card.Link>
+                </div>
               </Card.Body>
             </Card>
           ))}
@@ -76,7 +86,10 @@ function Portfolio() {
                     <Card.Body>
                     <Card.Title>{project.name}</Card.Title>
                     <Card.Text>{project.description}</Card.Text>
+                    <div className="icon-container">
                     <Card.Link href={project.githublink}><img className="github-icon" src={githubLogo}/></Card.Link>
+                    <Card.Link href={project.deployedlink}><img className="deployed-icon" src={deployedIcon}/></Card.Link>
+                    </div>
                     </Card.Body>
                 </Card>
                 ))}

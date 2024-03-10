@@ -18,7 +18,8 @@
 
 .card {
     width: calc(33.333% - 10px);
-    margin-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(250, 235, 215, .1);
 }
 
 .github-icon {
@@ -26,6 +27,18 @@
     height: 50px;
     margin: 0 auto;
     display: block;
+}
+.deployed-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    background-color:  rgba(250, 235, 215, .1);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (max-width: 600px) {
