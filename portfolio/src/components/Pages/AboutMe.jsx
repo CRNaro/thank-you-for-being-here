@@ -93,7 +93,7 @@ Christohper R Naro
       <p>
         Currently enhancing my technical skills through the Full Stack Web
         Development Boot Camp at UNH, I have gained proficiency in key
-        technologies such as HTML, CSS, JavaScript, and various database
+        technologies such as HTML, CSS, JavaScript, React and various database
         management systems. My ambition is to leverage my background in brewing
         and my newfound coding skills to contribute to innovative web
         development projects. I am particularly drawn to roles that offer
